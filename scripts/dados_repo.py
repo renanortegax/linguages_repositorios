@@ -4,6 +4,7 @@ import os
 from dotenv import load_dotenv
 from math import ceil 
 
+load_dotenv()
 class DadosRepositorios:
 
     def __init__(self, owner):
@@ -66,6 +67,7 @@ class DadosRepositorios:
         name_file = f"{self.owner}_github_languages_repos.csv"
         path = f"./dados/{name_file}"
         dados.to_csv(path, index=False)
+        print(f"Salvando dados de {self.owner} em {path}")
 
     
     

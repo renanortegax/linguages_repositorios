@@ -91,7 +91,11 @@ print("-=" * 100)
 # print(spotify_rep.lista_repositorios())
 # print(languages_spotify)
 
+apple_rep = DadosRepositorios('apple')
+languages_apple = apple_rep.cria_df_linguagens()
+
 # Salvando os dados
 amazon_rep.salvar_dados(languages_amzn)
 netflix_rep.salvar_dados(languages_netflix)
 spotify_rep.salvar_dados(languages_spotify)
+apple_rep.salvar_dados(languages_apple)
